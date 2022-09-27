@@ -35,7 +35,7 @@ def major2minor(texts: Sequence[str]) -> NDArray:
     new_texts = np.array(new_texts)
     return new_texts  
   
-def cut_texts(texts: Sequence[str], max_len=500) -> NDArray:
+def cut_texts(texts: Sequence[str], max_len: int = 500) -> NDArray:
     new_texts = []
     for text in texts:
         full_stop_idx = [idx for idx, char in enumerate(text) if char == '.']
