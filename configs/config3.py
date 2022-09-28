@@ -1,5 +1,5 @@
-## 1 fold(1), valid f1 score = (0.82222), public f1 score = 0.81563
-## 1 fold(2), valid f1 score = (0.83339), public f1 score = 0.81651
+## 1 fold(1), valid f1 score = 0.82222, public f1 score = 0.81563
+## 1 fold(2), valid f1 score = 0.83339, public f1 score = 0.81651
 ## 2 fold(1, 2), valid f1 score = (0.82222, 0.83339), public f1 score = 0.82102
 ## 5 fold, valid f1 score = (0.82222, 0.83339, 0.82561, 0.81729, 0.81679), public f1 score = 0.82649
 
