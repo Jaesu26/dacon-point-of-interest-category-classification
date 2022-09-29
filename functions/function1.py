@@ -6,7 +6,7 @@ def clean_texts(texts: Sequence[str]) -> NDArray:
         text = re.sub(r'<[^>]+>', '', text)          ## Html tags 제거
         text = re.sub(u'[\u4E00-\u9FA5]', '', text)  ## 한자 제거
         text = re.sub(r'[@%\\*=()/~#&\+á?\xc3\xa1\-\|\:\;\!\-\,\_\~\$\'\"\n\]\[\>\<]', ' ', text)   ## @%*=()/+ 와 같은 문장부호 제거(마침표 제외)
-        text = re.sub(r"[^\uAC00-\uD7A30-9\s\.]", ' ', text)  ## 숫자, 한글 음절, 띄어쓰기, 마침표 제외하고 모두 삭제
+        text = re.sub(r'[^\uAC00-\uD7A30-9\s\.]', ' ', text)  ## 숫자, 한글 음절, 띄어쓰기, 마침표 제외하고 모두 삭제
         text = re.sub(r'\s+', ' ', text)      ## extra space 제거
         text = re.sub(r'^\s+', '', text)      ## space from start 제거
         text = re.sub(r'\s+$', '', text)      ## space from the end 제거
