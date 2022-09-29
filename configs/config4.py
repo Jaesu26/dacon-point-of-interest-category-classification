@@ -34,7 +34,7 @@ monitor = 'f1_score'
 mode = 'max'
 
 ## loss function
-loss_fn = FocalLoss(gamma=5.0, label_smoothing=LABEL_SMOOTHING)
+loss_fn = FocalLoss(alpha=0.25, gamma=5.0, label_smoothing=LABEL_SMOOTHING)
 
 ## optimizer, scheduler
 optimizer = AdamW(model.parameters(), lr=LEARNING_RATE) 
