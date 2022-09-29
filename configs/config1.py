@@ -33,7 +33,9 @@ SEED = 2022
 patience = 4
 monitor = 'f1_score'
 mode = 'max'
-gamma = 5.0  ## focal loss
+
+## loss function
+loss_fn = FocalLoss(gamma=5.0, label_smoothing=LABEL_SMOOTHING)
 
 ## optimizer, scheduler
 optimizer = AdamW(model.parameters(), lr=LEARNING_RATE) 
