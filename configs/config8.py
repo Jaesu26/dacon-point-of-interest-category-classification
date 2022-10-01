@@ -34,10 +34,10 @@ SEED = 2022
 ## https://github.com/Jaesu26/text-augmentation
 def get_transforms() -> A.Compose:
     transforms = A.Compose([
-        RandomSwapSentences(p=0.5),
-        RandomSwapWords(p=0.5),
-        RandomDeletionSentences(min_sentences=3, deletion_prob=0.1, p=0.5),
-        RandomDeletionWords(min_words_each_sentence=5, deletion_prob=0.1, p=0.5),
+        RandomSwapSentences(ignore_first=False, p=0.5),
+        RandomSwapWords(ignore_first=False, p=0.5),
+        RandomDeletionSentences(min_sentences=3, deletion_prob=0.1, ignore_first=False, p=0.5),
+        RandomDeletionWords(min_words_each_sentence=5, deletion_prob=0.1, ignore_first=False, p=0.5),
         DeletionFullstops()
     ])
     return transforms  ## 데이터 변환 방식을 반환
