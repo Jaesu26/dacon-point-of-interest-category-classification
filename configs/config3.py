@@ -13,7 +13,7 @@
 train_texts = df['overview'].values
 train_texts = minor2major(train_texts, minor2major_dict)
 train_texts = clean_texts(train_texts)
-train_texts = cut_texts(train_texts)
+train_texts = cut_texts(train_texts, max_len=550)
 train_texts = remove_fullstops(train_texts)
 
 
