@@ -30,7 +30,7 @@ def cut_texts(texts: Sequence[str], max_len: int = 550) -> List[str]:
             else:
                 end_idx = full_stop_idx[0]
 
-        new_texts.append(text[:end_idx])
+        new_texts.append(text[:end_idx].strip())
     return new_texts
   
 def delete_duplicate_fullstops(texts: Sequence[str]) -> List[str]:
