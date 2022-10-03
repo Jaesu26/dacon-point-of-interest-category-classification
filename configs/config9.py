@@ -29,7 +29,7 @@ BATCH_SIZE = 64
 LEARNING_RATE = 5e-5
 LABEL_SMOOTHING = 0.1  ## 잘못 라벨링된 데이터가 존재
 SEED = 2022
-
+drop_last = True  ## data loader
 
 #---------------------------- transforms ----------------------------#  
 None
