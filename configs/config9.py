@@ -1,4 +1,5 @@
-## 1 fold(1), valid f1 score = 0.82216, public f1 score = 0.81782
+## 마침표 있는 경우: 1 fold(1), valid f1 score = 0.81533, public f1 score = 0.81095
+## 마침표 없앤 경우: 1 fold(1), valid f1 score = 0.82216, public f1 score = 0.81782
 
 
 #---------------------------- functions ----------------------------#
