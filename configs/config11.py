@@ -1,12 +1,12 @@
-## 1 fold(1), valid f1 score = 0.81616, public f1 score = 0.81498
+## 1 fold(1), valid f1 score = 0.83477, public f1 score = 0.83730
 
 
 #---------------------------- functions ----------------------------#
-## function7.py
+## function8.py
   
   
 #---------------------------- texts ----------------------------#    
-## minor2major_dict4.py
+## minor2major_dict5.py
 train_texts = df['overview'].values
 train_texts = minor2major(train_texts, minor2major_dict)
 train_texts = clean_texts(train_texts)
