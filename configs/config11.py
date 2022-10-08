@@ -12,11 +12,11 @@
 ## minor2major_dict5.py
 train_texts = df['overview'].values
 train_texts = minor2major(train_texts, minor2major_dict)
+train_texts = delete_duplicate_fullstops(train_texts)
 train_texts = clean_texts(train_texts)
 train_texts = major2minor(train_texts, major2minor_dict)
-train_texts = delete_duplicate_fullstops(train_texts)
 train_texts = cut_texts(train_texts, max_len=550)
-train_texts = add_fullstop(train_texts)
+train_texts = delete_last_fullstop(train_texts)  
 train_texts = np.array(train_texts)
 
 
