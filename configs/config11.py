@@ -1,5 +1,6 @@
 ## 1 fold(1), valid f1 score = 0.83477, public f1 score = 0.83730
 ## 2 fold(1, 2), valid f1 score = (0.83477, 0.83693), public f1 score = 0.84375
+## 4 fold(1, 2, 3, 4), valid f1 score = (0.83477, 0.83693, 0.83271, 0.83962), public f1 score = 0.84951
 
 
 #---------------------------- functions ----------------------------#
